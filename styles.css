@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+}
+
+body {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 16.8rem;
+    font-size: 16px;
+    display: flex;
+}
+
+.left,
+.right {
+    display: flex;
+    flex-direction: column;
+}
+
+.left {
+    padding-right: 8.7rem;
+    /* TODO: explain to Vita */
+    flex-basis: 35%;
+}
+
+.right {
+    padding-left: 8.8rem;
+}
+
+.content-wrapper:not(div > .content-wrapper:last-child) {
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 4.7rem;
+}
+
+.content-wrapper:not(div > .content-wrapper:first-child) {
+    padding-top: 4.8rem;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 4.8rem;
+}
