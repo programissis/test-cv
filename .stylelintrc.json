@@ -1,0 +1,8 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-htmlacademy",
+    "stylelint-order",
+    "stylelint-config-idiomatic-order"
+  ]
+}
