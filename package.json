@@ -1,0 +1,26 @@
+{
+  "name": "test-cv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "magic": "npx stylelint \"**/*.css\" --fix && npx prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github-programissis:programissis/test-cv.git"
+  },
+  "author": "programissis",
+  "license": "",
+  "devDependencies": {
+    "@linthtml/linthtml": "^0.9.3",
+    "linthtml-config-htmlacademy": "^1.0.3",
+    "prettier": "2.7.1",
+    "stylelint": "^14.14.0",
+    "stylelint-config-htmlacademy": "^1.1.2",
+    "stylelint-config-idiomatic-order": "^9.0.0",
+    "stylelint-config-standard": "^29.0.0",
+    "stylelint-order": "^5.0.0"
+  }
+}
