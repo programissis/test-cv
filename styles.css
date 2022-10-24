@@ -12,8 +12,9 @@
 }
 
 html {
+  background-color: #ffffff;
   font-family: "Inter", sans-serif;
-  font-size: 10px;
+  font-size: max(8px, 0.52vw);
 }
 
 h1,
@@ -49,6 +50,7 @@ a {
 
 code {
   font-family: "Roboto Mono", monospace;
+  white-space: pre-wrap;
 }
 
 a {
@@ -76,8 +78,9 @@ a:hover + .material-symbols-rounded {
 
 body {
   display: flex;
-  width: 1440px;
-  padding: 16.8rem;
+  width: 75vw;
+  min-width: min(100%, 1125px);
+  padding: min(6vw, 16.8rem);
   margin: 0 auto;
   font-size: 16px;
 }
@@ -111,7 +114,8 @@ main {
   margin-top: 0;
 }
 
-.content-wrapper > :last-child {
+.content-wrapper > :last-child,
+header > :last-child {
   margin-bottom: 0;
 }
 
@@ -209,4 +213,48 @@ li::before {
 
 .technologies > .material-symbols-rounded {
   font-size: 4rem;
+}
+
+@media (max-width: 980px) {
+  body {
+    flex-direction: column;
+  }
+
+  main,
+  aside {
+    padding: 0;
+    border: 0;
+  }
+
+  aside {
+    flex-basis: initial;
+    padding-bottom: 4.7rem;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  main {
+    padding-top: 4.8rem;
+  }
+
+  .photo-section {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .photo-wrapper {
+    width: 25%;
+  }
+}
+
+@media (max-width: 700px) {
+  .photo-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .photo-wrapper {
+    width: 50%;
+  }
 }
