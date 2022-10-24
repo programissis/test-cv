@@ -33,6 +33,11 @@ h2 {
   font-size: 2.8rem;
 }
 
+a {
+  all: unset;
+  cursor: pointer;
+}
+
 p,
 a,
 pre,
@@ -50,12 +55,8 @@ a {
 
 code {
   font-family: "Roboto Mono", monospace;
+  font-size: 2rem;
   white-space: pre-wrap;
-}
-
-a {
-  all: unset;
-  cursor: pointer;
 }
 
 a:hover {
